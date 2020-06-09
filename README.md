@@ -671,7 +671,7 @@ Different tools for marking objects in images:
 
 ## The command line
 1. train: ./darknet detector train project_yolov4/cfg/number.data project_yolov4/cfg/yolov3-tiny.cfg yolov3-tiny.conv.11 -map
-2. test: ./darknet detector test project_yolov4/cfg/number.data project_yolov4/cfg/yolov3-tiny.cfg /data/code/darknet/darknet-master/project_yolov4/backup/yolov3-tiny_best.weights -dont_show -ext_output < test.txt > result.txt
+2. test: /darknet detector test project_yolov4/cfg/number.data project_yolov4/cfg/yolov3-tiny.cfg /data/code/darknet/darknet-master/project_yolov4/backup/yolov3-tiny_best.weights  -thresh 0.15 -dont_show -ext_output < test.txt > result.txt
 3. anchor: ./darknet detector calc_anchors project_yolov4/cfg/number.data -num_of_clusters 6 -width 416 -height 416
 
 
